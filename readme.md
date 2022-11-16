@@ -1,1 +1,1 @@
-![image info](DiagramaProyecto.png)
+![My Image](DiagramaProyecto.png)
