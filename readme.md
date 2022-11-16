@@ -1,1 +1,1 @@
-![image info](./DiagraProyecto.drawio.png)
+![image info](DiagramaProyecto.png)
