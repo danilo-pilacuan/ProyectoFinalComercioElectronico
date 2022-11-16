@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "q9Bo5qidoQI+KD728xGo8QkBf11XnA1qUxvSOKFtUbbWAbsBb9mj72B5RNfTW+pBD0b7Wm2Cl6BkjSd1lnTDKg==",
+  "dgSpecHash": "nR/aA4l9PaXEAhnTB0hYNMvhbM3vQytnAMc1g6npECNCc67liwBVdiw3F4RgtFVWK0S3N0h5b01/TKu6NfS/dw==",
   "success": true,
-  "projectFilePath": "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Infraestructure\\ComercioElectronico.Infraestructure.csproj",
+  "projectFilePath": "C:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Infraestructure\\ComercioElectronico.Infraestructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dpilacua\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\dpilacua\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.10\\microsoft.data.sqlite.core.6.0.10.nupkg.sha512",

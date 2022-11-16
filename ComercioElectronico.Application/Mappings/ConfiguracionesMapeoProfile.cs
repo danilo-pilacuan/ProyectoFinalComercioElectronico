@@ -33,6 +33,9 @@ public class ConfiguracionesMapeoProfile:Profile
         CreateMap<OrdenItemCreateUpdateDto,OrdenItem>();
         CreateMap<OrdenItem,OrdenItemDto>();
         
+        CreateMap<UserCreateUpdateDto,User>();
+        CreateMap<User,UserDto>();
+        
         
     }
 }

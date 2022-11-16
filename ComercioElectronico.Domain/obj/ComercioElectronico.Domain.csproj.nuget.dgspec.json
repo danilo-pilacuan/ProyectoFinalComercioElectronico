@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Domain\\ComercioElectronico.Domain.csproj": {}
+    "C:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Domain\\ComercioElectronico.Domain.csproj": {}
   },
   "projects": {
-    "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Domain\\ComercioElectronico.Domain.csproj": {
+    "C:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Domain\\ComercioElectronico.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Domain\\ComercioElectronico.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Domain\\ComercioElectronico.Domain.csproj",
         "projectName": "ComercioElectronico.Domain",
-        "projectPath": "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Domain\\ComercioElectronico.Domain.csproj",
+        "projectPath": "C:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Domain\\ComercioElectronico.Domain.csproj",
         "packagesPath": "C:\\Users\\dpilacua\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Domain\\obj\\",
+        "outputPath": "C:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dpilacua\\AppData\\Roaming\\NuGet\\NuGet.Config"

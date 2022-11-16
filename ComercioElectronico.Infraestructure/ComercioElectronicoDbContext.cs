@@ -15,6 +15,7 @@ public class ComercioElectronicoDbContext:DbContext,IUnitOfWork
     public DbSet<Orden> Ordenes {get;set;}
     public DbSet<ListaDeseosItem> ListaDeseosItems {get;set;}
     public DbSet<ListaDeseos> ListasDeseos {get;set;}
+    public DbSet<User> Users {get;set;}
 
     public string DbPath {get;set;}
     public ComercioElectronicoDbContext()

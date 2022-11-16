@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace ComercioElectronico.HttpApi.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]")]
 public class ListaDeseosController:ControllerBase
 {
     private readonly IListaDeseosAppService listaDeseosAppService;
