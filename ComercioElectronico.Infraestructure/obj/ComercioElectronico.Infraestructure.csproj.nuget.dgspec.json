@@ -1,0 +1,126 @@
+{
+  "format": 1,
+  "restore": {
+    "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Infraestructure\\ComercioElectronico.Infraestructure.csproj": {}
+  },
+  "projects": {
+    "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Domain\\ComercioElectronico.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Domain\\ComercioElectronico.Domain.csproj",
+        "projectName": "ComercioElectronico.Domain",
+        "projectPath": "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Domain\\ComercioElectronico.Domain.csproj",
+        "packagesPath": "C:\\Users\\dpilacua\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dpilacua\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Infraestructure\\ComercioElectronico.Infraestructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Infraestructure\\ComercioElectronico.Infraestructure.csproj",
+        "projectName": "ComercioElectronico.Infraestructure",
+        "projectPath": "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Infraestructure\\ComercioElectronico.Infraestructure.csproj",
+        "packagesPath": "C:\\Users\\dpilacua\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Infraestructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dpilacua\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Domain\\ComercioElectronico.Domain.csproj": {
+                "projectPath": "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Domain\\ComercioElectronico.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

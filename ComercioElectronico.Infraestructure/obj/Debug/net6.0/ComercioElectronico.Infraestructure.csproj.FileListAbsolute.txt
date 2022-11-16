@@ -1,0 +1,17 @@
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.Infraestructure\bin\Debug\net6.0\ComercioElectronico.Infraestructure.deps.json
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.Infraestructure\bin\Debug\net6.0\ComercioElectronico.Infraestructure.runtimeconfig.json
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.Infraestructure\bin\Debug\net6.0\ComercioElectronico.Infraestructure.dll
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.Infraestructure\bin\Debug\net6.0\ComercioElectronico.Infraestructure.pdb
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.Infraestructure\bin\Debug\net6.0\ComercioElectronico.Domain.dll
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.Infraestructure\bin\Debug\net6.0\ComercioElectronico.Domain.pdb
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.Infraestructure\obj\Debug\net6.0\ComercioElectronico.Infraestructure.csproj.AssemblyReference.cache
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.Infraestructure\obj\Debug\net6.0\ComercioElectronico.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.Infraestructure\obj\Debug\net6.0\ComercioElectronico.Infraestructure.AssemblyInfoInputs.cache
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.Infraestructure\obj\Debug\net6.0\ComercioElectronico.Infraestructure.AssemblyInfo.cs
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.Infraestructure\obj\Debug\net6.0\ComercioElectronico.Infraestructure.csproj.CoreCompileInputs.cache
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.Infraestructure\obj\Debug\net6.0\ComercioElectronico.Infraestructure.csproj.CopyComplete
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.Infraestructure\obj\Debug\net6.0\ComercioElectronico.Infraestructure.dll
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.Infraestructure\obj\Debug\net6.0\refint\ComercioElectronico.Infraestructure.dll
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.Infraestructure\obj\Debug\net6.0\ComercioElectronico.Infraestructure.pdb
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.Infraestructure\obj\Debug\net6.0\ComercioElectronico.Infraestructure.genruntimeconfig.cache
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.Infraestructure\obj\Debug\net6.0\ref\ComercioElectronico.Infraestructure.dll

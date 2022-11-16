@@ -1,0 +1,17 @@
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.Application\bin\Debug\net6.0\ComercioElectronico.Application.deps.json
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.Application\bin\Debug\net6.0\ComercioElectronico.Application.dll
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.Application\bin\Debug\net6.0\ComercioElectronico.Application.pdb
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.Application\bin\Debug\net6.0\ComercioElectronico.Domain.dll
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.Application\bin\Debug\net6.0\ComercioElectronico.Infraestructure.dll
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.Application\bin\Debug\net6.0\ComercioElectronico.Domain.pdb
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.Application\bin\Debug\net6.0\ComercioElectronico.Infraestructure.pdb
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.Application\obj\Debug\net6.0\ComercioElectronico.Application.csproj.AssemblyReference.cache
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.Application\obj\Debug\net6.0\ComercioElectronico.Application.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.Application\obj\Debug\net6.0\ComercioElectronico.Application.AssemblyInfoInputs.cache
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.Application\obj\Debug\net6.0\ComercioElectronico.Application.AssemblyInfo.cs
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.Application\obj\Debug\net6.0\ComercioElectronico.Application.csproj.CoreCompileInputs.cache
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.Application\obj\Debug\net6.0\ComercioElectronico.Application.csproj.CopyComplete
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.Application\obj\Debug\net6.0\ComercioElectronico.Application.dll
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.Application\obj\Debug\net6.0\refint\ComercioElectronico.Application.dll
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.Application\obj\Debug\net6.0\ComercioElectronico.Application.pdb
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.Application\obj\Debug\net6.0\ref\ComercioElectronico.Application.dll
