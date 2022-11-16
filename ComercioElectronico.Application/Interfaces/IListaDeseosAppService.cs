@@ -9,4 +9,5 @@ public interface IListaDeseosAppService
     Task UpdateAsync (Guid listaDeseosId, ListaDeseosCreateUpdateDto listaDeseosCreateUpdateDto);
 
     Task<bool> DeleteAsync(Guid listaDeseosId);
+    Task<ListaDeseosItemDto> CreateListaDeseosItemAsync(ListaDeseosItemCreateUpdateDto listaDeseosItemCreateUpdateDto);
 }

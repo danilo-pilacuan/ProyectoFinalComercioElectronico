@@ -9,4 +9,6 @@ public interface ICarroAppService
     Task UpdateAsync (Guid carroId, CarroCreateUpdateDto carroCreateUpdateDto);
 
     Task<bool> DeleteAsync(Guid carroId);
+    Task<CarroItemDto> CreateCarroItemAsync(CarroItemCreateUpdateDto carroItemCreateUpdateDto);
+
 }

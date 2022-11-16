@@ -25,6 +25,12 @@ public class CarroController:ControllerBase
         return await carroAppService.CreateAsync(carroCreateUpdateDto);
     }
 
+    [HttpPost("CarroItem")]
+    public async Task<CarroItemDto> registrarCarroItem([FromForm] CarroItemCreateUpdateDto carroItemCreateUpdateDto)
+    {
+        return await carroAppService.CreateCarroItemAsync(carroItemCreateUpdateDto);
+    }
+
     [HttpPut("{carroId}")]
     public async Task actualizar(Guid carroId, [FromForm] CarroCreateUpdateDto carroCreateUpdateDto)
     {
@@ -36,6 +42,5 @@ public class CarroController:ControllerBase
     {
 
         return await carroAppService.DeleteAsync(carroId);
-
     }
 }

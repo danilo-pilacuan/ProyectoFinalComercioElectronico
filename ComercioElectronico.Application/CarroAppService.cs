@@ -10,13 +10,15 @@ public class CarroAppService : ICarroAppService
     private readonly IUnitOfWork unitOfWork;
     private readonly IMapper mapper;
     private readonly IValidator <CarroCreateUpdateDto> validator;
+    private readonly ICarroItemAppService carroItemAppService;
 
-    public CarroAppService(ICarroRepository repository, IUnitOfWork unitOfWork,IMapper mapper,IValidator <CarroCreateUpdateDto> validator)
+    public CarroAppService(ICarroRepository repository, IUnitOfWork unitOfWork,IMapper mapper,IValidator <CarroCreateUpdateDto> validator,ICarroItemAppService carroItemAppService)
     {
         this.repository = repository;
         this.unitOfWork = unitOfWork;
         this.mapper = mapper;
         this.validator = validator;
+        this.carroItemAppService = carroItemAppService;
     }
     public async Task<CarroDto> CreateAsync(CarroCreateUpdateDto carroCreateUpdateDto)
     {
@@ -46,6 +48,7 @@ public class CarroAppService : ICarroAppService
 
         return carroDto;
     }
+    
 
     public async Task<bool> DeleteAsync(Guid carroId)
     {
@@ -93,5 +96,13 @@ public class CarroAppService : ICarroAppService
         await repository.UnitOfWork.SaveChangesAsync();
 
         return;
+    }
+
+    public async Task<CarroItemDto> CreateCarroItemAsync(CarroItemCreateUpdateDto carroItemCreateUpdateDto)
+    {
+        var carroItemDto = await carroItemAppService.CreateAsync(carroItemCreateUpdateDto);
+
+
+        return carroItemDto;
     }
 }

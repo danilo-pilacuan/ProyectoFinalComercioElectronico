@@ -10,13 +10,15 @@ public class ListaDeseosAppService : IListaDeseosAppService
     private readonly IUnitOfWork unitOfWork;
     private readonly IMapper mapper;
     private readonly IValidator <ListaDeseosCreateUpdateDto> validator;
+    private readonly IListaDeseosItemAppService listaDeseosItemAppService;
 
-    public ListaDeseosAppService(IListaDeseosRepository repository, IUnitOfWork unitOfWork,IMapper mapper,IValidator <ListaDeseosCreateUpdateDto> validator)
+    public ListaDeseosAppService(IListaDeseosRepository repository, IUnitOfWork unitOfWork,IMapper mapper,IValidator <ListaDeseosCreateUpdateDto> validator,IListaDeseosItemAppService listaDeseosItemAppService)
     {
         this.repository = repository;
         this.unitOfWork = unitOfWork;
         this.mapper = mapper;
         this.validator = validator;
+        this.listaDeseosItemAppService = listaDeseosItemAppService;
     }
     public async Task<ListaDeseosDto> CreateAsync(ListaDeseosCreateUpdateDto listaDeseosCreateUpdateDto)
     {
@@ -45,6 +47,14 @@ public class ListaDeseosAppService : IListaDeseosAppService
         var listaDeseosDto = mapper.Map<ListaDeseos,ListaDeseosDto>(listaDeseos);
 
         return listaDeseosDto;
+    }
+
+    public async Task<ListaDeseosItemDto> CreateListaDeseosItemAsync(ListaDeseosItemCreateUpdateDto listaDeseosItemCreateUpdateDto)
+    {
+        var listaDeseosItemDto = await listaDeseosItemAppService.CreateAsync(listaDeseosItemCreateUpdateDto);
+
+
+        return listaDeseosItemDto;
     }
 
     public async Task<bool> DeleteAsync(Guid listaDeseosId)

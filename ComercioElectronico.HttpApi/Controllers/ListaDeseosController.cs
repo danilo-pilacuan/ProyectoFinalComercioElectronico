@@ -25,6 +25,12 @@ public class ListaDeseosController:ControllerBase
         return await listaDeseosAppService.CreateAsync(listaDeseosCreateUpdateDto);
     }
 
+    [HttpPost("ListaDeseosItem")]
+    public async Task<ListaDeseosItemDto> registrarListaDeseosItem([FromForm] ListaDeseosItemCreateUpdateDto listaDeseosItemCreateUpdateDto)
+    {
+        return await listaDeseosAppService.CreateListaDeseosItemAsync(listaDeseosItemCreateUpdateDto);
+    }
+
     [HttpPut("{listaDeseosId}")]
     public async Task actualizar(Guid listaDeseosId, [FromForm] ListaDeseosCreateUpdateDto listaDeseosCreateUpdateDto)
     {

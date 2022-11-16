@@ -14,7 +14,13 @@ public class ProductoController:ControllerBase
     }
 
     [HttpGet]
-    public ICollection<ProductoDto> obtenerMarcas()
+    public ICollection<ProductoDto> obtenerProductos()
+    {
+        return productoAppService.GetAll();
+    }
+
+    [HttpGet("{campo}/{parametro}")]
+    public ICollection<ProductoDto> obtenerProductosPaginado([FromQuery] int limit=10,[FromQuery] int offset=0,[FromRoute] string campo="",[FromRoute] string parametro="")
     {
         return productoAppService.GetAll();
     }

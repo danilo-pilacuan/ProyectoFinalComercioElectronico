@@ -66,9 +66,9 @@ public class ProductoAppService : IProductoAppService
 
     public ICollection<ProductoDto> GetAll()
     {
-        List<Producto> listaTiposProducto= repository.GetAll().ToList();
+        List<Producto> listaProducto= repository.GetAll().ToList();
 
-        // return listaTiposProducto.Select(x=>new ProductoDto(){
+        // return listaProducto.Select(x=>new ProductoDto(){
         //     Id=x.Id,
         //     Nombre=x.Nombre,
         //     Precio=x.Precio,
@@ -81,9 +81,30 @@ public class ProductoAppService : IProductoAppService
         //     }).ToList();
 
             
-        return listaTiposProducto.Select(x=>mapper.Map<Producto,ProductoDto>(x)).ToList();
+        return listaProducto.Select(x=>mapper.Map<Producto,ProductoDto>(x)).ToList();
 
 
+    }
+
+    public ICollection<ProductoDto> GetByText(int limit = 10, int offset = 0, string campo = "", string parametro = "")
+    {
+        List<Producto> listaProductos= repository.GetAll().ToList();
+
+        List<ProductoDto> listaDtos=null;
+
+        switch(campo.ToLower())
+        {
+            case "nombre":
+                listaDtos=listaProductos.Where(x=>x.Nombre.ToUpper().Contains(parametro.ToUpper())).Select(x=>mapper.Map<Producto,ProductoDto>(x)).Skip(offset).Take(limit).ToList();
+            break;
+            case "descripcion":
+                listaDtos=listaProductos.Where(x=>x.Descripcion.ToUpper().Contains(parametro.ToUpper())).Select(x=>mapper.Map<Producto,ProductoDto>(x)).Skip(offset).Take(limit).ToList();
+            break;
+            default:
+                throw new ArgumentException($"El campo: {campo}, no existe en la clase");
+        }
+        
+        return listaDtos;
     }
 
     public async Task UpdateAsync(Guid productoId, ProductoCreateUpdateDto productoCreateUpdateDto)
