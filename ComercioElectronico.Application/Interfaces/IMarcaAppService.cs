@@ -4,9 +4,9 @@ public interface IMarcaAppService
 {
     ICollection<MarcaDto> GetAll();
 
-    Task<MarcaDto> CreateAsync(MarcaCreateUpdateDto marcaCreateUpdateDto);
+    Task<MarcaDto> CreateAsync(MarcaCreateDto marcaCreateDto);
 
-    Task UpdateAsync (string id, MarcaCreateUpdateDto marcaCreateUpdateDto);
+    Task UpdateAsync (string marcaId, MarcaUpdateDto marcaUpdateDto);
 
     Task<bool> DeleteAsync(string marcaId);
 }

@@ -12,8 +12,8 @@ public class Orden
     public EstadoOrden EstadoOrden { get; set;}
     [Required]
     public Guid ClienteId { get; set;}
-    public Cliente? Cliente { get; set;}
-    public virtual ICollection<OrdenItem> Items { get; set;} = new List<OrdenItem>();
+    public virtual Cliente Cliente { get; set;}
+    public ICollection<OrdenItem> Items { get; set;} = new List<OrdenItem>();
     [Required]
     public decimal Total {get;set;}
 }

@@ -11,23 +11,27 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<ComercioElectronicoDbContext>();
+builder.Services.AddInfraestructure(builder.Configuration);
 
-builder.Services.AddScoped<IUnitOfWork>(provider=>
-{
-    var instance = provider.GetService<ComercioElectronicoDbContext>();
-    return instance;
-}
-);
+builder.Services.AddApplication(builder.Configuration);
 
-builder.Services.AddTransient<IMarcaRepository,MarcaRepository>();
-builder.Services.AddTransient<IMarcaAppService,MarcaAppService>();
+// builder.Services.AddDbContext<ComercioElectronicoDbContext>();
 
-builder.Services.AddTransient<ITipoProductoRepository,TipoProductoRepository>();
-builder.Services.AddTransient<ITipoProductoAppService,TipoProductoAppService>();
+// builder.Services.AddScoped<IUnitOfWork>(provider=>
+// {
+//     var instance = provider.GetService<ComercioElectronicoDbContext>();
+//     return instance;
+// }
+// );
 
-builder.Services.AddTransient<IProductoRepository,ProductoRepository>();
-builder.Services.AddTransient<IProductoAppService,ProductoAppService>();
+// builder.Services.AddTransient<IMarcaRepository,MarcaRepository>();
+// builder.Services.AddTransient<IMarcaAppService,MarcaAppService>();
+
+// builder.Services.AddTransient<ITipoProductoRepository,TipoProductoRepository>();
+// builder.Services.AddTransient<ITipoProductoAppService,TipoProductoAppService>();
+
+// builder.Services.AddTransient<IProductoRepository,ProductoRepository>();
+// builder.Services.AddTransient<IProductoAppService,ProductoAppService>();
 
 var app = builder.Build();
 

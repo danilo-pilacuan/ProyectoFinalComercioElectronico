@@ -1,3 +1,4 @@
+using AutoMapper;
 using ComercioElectronico.Domain;
 
 namespace ComercioElectronico.Application;
@@ -6,22 +7,32 @@ public class TipoProductoAppService : ITipoProductoAppService
 {
     private readonly ITipoProductoRepository repository;
     private readonly IUnitOfWork unitOfWork;
-    public TipoProductoAppService(ITipoProductoRepository repository, IUnitOfWork unitOfWork)
+    private readonly IMapper mapper;
+    public TipoProductoAppService(ITipoProductoRepository repository, IUnitOfWork unitOfWork,IMapper mapper)
     {
         this.repository = repository;
         this.unitOfWork = unitOfWork;
+        this.mapper = mapper;
     }
     public async Task<TipoProductoDto> CreateAsync(TipoProductoCreateUpdateDto tipoProductoCreateUpdateDto)
     {
-        var tipoProducto = new TipoProducto();
-        tipoProducto.Id=tipoProductoCreateUpdateDto.Id;
-        tipoProducto.Descripcion=tipoProductoCreateUpdateDto.Descripcion;
+        // var tipoProducto = new TipoProducto();
+        // tipoProducto.Id=tipoProductoCreateUpdateDto.Id;
+        // tipoProducto.Descripcion=tipoProductoCreateUpdateDto.Descripcion;
+
+        
+        var tipoProducto = mapper.Map<TipoProductoCreateUpdateDto,TipoProducto>(tipoProductoCreateUpdateDto);
+
+
         tipoProducto=await repository.AddAsync(tipoProducto);
         await unitOfWork.SaveChangesAsync();
         
-        var tipoProductoDto = new TipoProductoDto();
-        tipoProductoDto.Id=tipoProducto.Id;
-        tipoProductoDto.Descripcion=tipoProducto.Descripcion;
+        // var tipoProductoDto = new TipoProductoDto();
+        // tipoProductoDto.Id=tipoProducto.Id;
+        // tipoProductoDto.Descripcion=tipoProducto.Descripcion;
+
+        var tipoProductoDto = mapper.Map<TipoProducto,TipoProductoDto>(tipoProducto);
+
 
         return tipoProductoDto;
     }

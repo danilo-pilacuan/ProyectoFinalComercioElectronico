@@ -25,10 +25,18 @@ public class TipoProductoController:ControllerBase
         return await tipoProductoAppService.CreateAsync(tipoProductoCreateUpdateDto);
     }
 
-    [HttpPut("{id}")]
-    public async Task actualizar(string id, [FromForm] TipoProductoCreateUpdateDto tipoProductoCreateUpdateDto)
+    [HttpPut("{tipoProductoId}")]
+    public async Task actualizar(string tipoProductoId, [FromForm] TipoProductoCreateUpdateDto tipoProductoCreateUpdateDto)
     {
-        await tipoProductoAppService.UpdateAsync(id,tipoProductoCreateUpdateDto);
+        await tipoProductoAppService.UpdateAsync(tipoProductoId,tipoProductoCreateUpdateDto);
+    }
+
+    [HttpDelete("{tipoProductoId}")]
+    public async Task<bool> DeleteAsync(string tipoProductoId)
+    {
+
+        return await tipoProductoAppService.DeleteAsync(tipoProductoId);
+
     }
 }
 

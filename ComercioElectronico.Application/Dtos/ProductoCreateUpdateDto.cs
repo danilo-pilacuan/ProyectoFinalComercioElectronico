@@ -9,7 +9,7 @@ public class ProductoCreateUpdateDto
     [StringLength(DominioConstantes.NOMBRE_MAX)]
     public string Nombre { get; set;}
     [Required]
-    public string Precio { get; set;}
+    public decimal Precio { get; set;}
     [Required]
     [StringLength(DominioConstantes.DESCRIPCION_MAX)]
     public string Descripcion { get; set;}

@@ -12,7 +12,7 @@ public class Carro
     public DateTime? FechaModificacion { get; set;}
     [Required]
     public Guid ClienteId { get; set;}
-    public virtual Cliente? Cliente { get; set;}
+    public virtual Cliente Cliente { get; set;}
     public virtual ICollection<CarroItem> Items { get; set;} = new List<CarroItem>();
     [Required]
     public decimal Total {get;set;}

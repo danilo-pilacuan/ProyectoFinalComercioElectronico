@@ -59,3 +59,8 @@ c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.HttpApi\obj\De
 c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.HttpApi\obj\Debug\net6.0\ComercioElectronico.HttpApi.pdb
 c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.HttpApi\obj\Debug\net6.0\ComercioElectronico.HttpApi.genruntimeconfig.cache
 c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.HttpApi\obj\Debug\net6.0\ref\ComercioElectronico.HttpApi.dll
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.HttpApi\bin\Debug\net6.0\AutoMapper.dll
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.HttpApi\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.HttpApi\bin\Debug\net6.0\FluentValidation.dll
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.HttpApi\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.HttpApi\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll

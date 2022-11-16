@@ -25,9 +25,17 @@ public class ProductoController:ControllerBase
         return await productoAppService.CreateAsync(productoCreateUpdateDto);
     }
 
-    [HttpPut("{id}")]
-    public async Task actualizar(Guid id, [FromForm] ProductoCreateUpdateDto productoCreateUpdateDto)
+    [HttpPut("{productoId}")]
+    public async Task actualizar(Guid productoId, [FromForm] ProductoCreateUpdateDto productoCreateUpdateDto)
     {
-        await productoAppService.UpdateAsync(id,productoCreateUpdateDto);
+        await productoAppService.UpdateAsync(productoId,productoCreateUpdateDto);
+    }
+
+    [HttpDelete("{productoId}")]
+    public async Task<bool> DeleteAsync(Guid productoId)
+    {
+
+        return await productoAppService.DeleteAsync(productoId);
+
     }
 }
