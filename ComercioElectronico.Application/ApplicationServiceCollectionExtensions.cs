@@ -20,6 +20,7 @@ public static class ApplicationServiceCollectionExtensions
         services.AddTransient<ICarroItemAppService, CarroItemAppService>();
         services.AddTransient<IListaDeseosAppService, ListaDeseosAppService>();
         services.AddTransient<IListaDeseosItemAppService, ListaDeseosItemAppService>();
+        services.AddTransient<IUserAppService, UserAppService>();
 
         //Configurar la inyección de todos los profile que existen en un Assembly
         services.AddAutoMapper(Assembly.GetExecutingAssembly());

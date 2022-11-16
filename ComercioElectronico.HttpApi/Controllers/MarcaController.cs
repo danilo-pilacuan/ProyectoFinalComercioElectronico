@@ -1,10 +1,12 @@
 using ComercioElectronico.Application;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ComercioElectronico.HttpApi.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[Authorize]
 public class MarcasController:ControllerBase
 {
 

@@ -64,3 +64,11 @@ c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.HttpApi\bin\De
 c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.HttpApi\bin\Debug\net6.0\FluentValidation.dll
 c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.HttpApi\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
 c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.HttpApi\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.HttpApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.HttpApi\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.HttpApi\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.HttpApi\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.HttpApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.HttpApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.HttpApi\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+c:\Users\dpilacua\Desktop\ComercioElectronico\ComercioElectronico.HttpApi\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll

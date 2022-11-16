@@ -18,6 +18,7 @@ public static class InfraestructureServiceCollectionExtensions
             services.AddTransient<ICarroItemRepository, CarroItemRepository>(); 
             services.AddTransient<IListaDeseosRepository, ListaDeseosRepository>(); 
             services.AddTransient<IListaDeseosItemRepository, ListaDeseosItemRepository>(); 
+            services.AddTransient<IUserRepository, UserRepository>(); 
 
             
             //Configuraciones de Dependencias

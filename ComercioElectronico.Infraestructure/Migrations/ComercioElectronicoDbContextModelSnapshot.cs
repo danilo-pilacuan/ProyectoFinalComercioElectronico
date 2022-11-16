@@ -273,7 +273,12 @@ namespace ComercioElectronico.Infraestructure.Migrations
 
             modelBuilder.Entity("ComercioElectronico.Domain.User", b =>
                 {
-                    b.Property<string>("Id")
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Contrasenia")
+                        .IsRequired()
                         .HasMaxLength(80)
                         .HasColumnType("TEXT");
 

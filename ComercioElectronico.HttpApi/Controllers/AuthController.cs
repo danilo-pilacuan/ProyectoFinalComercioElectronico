@@ -25,18 +25,20 @@ namespace ComercioElectronico.HttpApi.Controllers
         
         [HttpPost("/api/resgistrarUser")]
         [AllowAnonymous]
+        
         public async Task<UserDto> registrar([FromForm] UserCreateUpdateDto userCreateUpdateDto)
         {
             return await userAppService.CreateAsync(userCreateUpdateDto);
         }
 
         [HttpPost("/api/login")]
+        [AllowAnonymous]
         public async Task<string> TokenAsync([FromForm] UserCreateUpdateDto userCreateUpdateDto)
         {
 
             UserDto userDto = await userAppService.GetByUserNameAsync(userCreateUpdateDto.UserName);
             
-            if(userDto.Password==userCreateUpdateDto.Password)
+            if(userDto.Contrasenia==userCreateUpdateDto.Contrasenia)
             {
                 var claims = new List<Claim>();
 
@@ -85,6 +87,6 @@ namespace ComercioElectronico.HttpApi.Controllers
     {
 
         public string? UserName { get; set; }
-        public string? Password { get; set; }
+        public string? Contrasenia { get; set; }
     }
 }

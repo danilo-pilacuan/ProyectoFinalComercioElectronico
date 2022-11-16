@@ -1,5 +1,4 @@
 using AutoMapper;
-using ComercioElectronico.Application.Interfaces;
 using ComercioElectronico.Domain;
 
 namespace ComercioElectronico.Application;
@@ -78,7 +77,7 @@ public class UserAppService: IUserAppService
         }
 
         user.UserName = userCreateUpdateDto.UserName;
-        user.Password = userCreateUpdateDto.Password;
+        user.Contrasenia = userCreateUpdateDto.Contrasenia;
 
         //Persistencia objeto
         await repository.UpdateAsync(user);
