@@ -26,7 +26,7 @@ public class JwtConfiguration : ControllerBase
         /// </summary>
         public string Audience { get; set; }
 
-        public TimeSpan Expires { get; set; } = TimeSpan.FromMinutes(10);
+        public TimeSpan Expires { get; set; } = TimeSpan.FromMinutes(1440);
 
     
 }

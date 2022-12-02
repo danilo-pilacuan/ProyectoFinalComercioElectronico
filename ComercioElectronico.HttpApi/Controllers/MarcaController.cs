@@ -1,11 +1,13 @@
 using ComercioElectronico.Application;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Cors;
 
 namespace ComercioElectronico.HttpApi.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[EnableCors]
 [Authorize]
 public class MarcasController:ControllerBase
 {
@@ -24,13 +26,13 @@ public class MarcasController:ControllerBase
     }
 
     [HttpPost]
-    public async Task<MarcaDto> registrar([FromForm] MarcaCreateDto marcaCreateDto)
+    public async Task<MarcaDto> registrar([FromBody] MarcaCreateDto marcaCreateDto)
     {
         return await marcaAppService.CreateAsync(marcaCreateDto);
     }
 
     [HttpPut("{marcaId}")]
-    public async Task actualizar(string marcaId, [FromForm] MarcaUpdateDto marcaUpdateDto)
+    public async Task actualizar(string marcaId, [FromBody] MarcaUpdateDto marcaUpdateDto)
     {
         await marcaAppService.UpdateAsync(marcaId,marcaUpdateDto);
     }

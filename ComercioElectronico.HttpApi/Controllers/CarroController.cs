@@ -1,11 +1,13 @@
 using ComercioElectronico.Application;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Cors;
 
 namespace ComercioElectronico.HttpApi.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[EnableCors]
 [Authorize]
 public class CarroController:ControllerBase
 {
@@ -28,13 +30,13 @@ public class CarroController:ControllerBase
     }
 
     [HttpPost("CarroItem")]
-    public async Task<CarroItemDto> registrarCarroItem([FromForm] CarroItemCreateUpdateDto carroItemCreateUpdateDto)
+    public async Task<CarroItemDto> registrarCarroItem([FromBody] CarroItemCreateUpdateDto carroItemCreateUpdateDto)
     {
         return await carroAppService.CreateCarroItemAsync(carroItemCreateUpdateDto);
     }
 
     [HttpPut("{carroId}")]
-    public async Task actualizar(Guid carroId, [FromForm] CarroCreateUpdateDto carroCreateUpdateDto)
+    public async Task actualizar(Guid carroId, [FromBody] CarroCreateUpdateDto carroCreateUpdateDto)
     {
         await carroAppService.UpdateAsync(carroId,carroCreateUpdateDto);
     }

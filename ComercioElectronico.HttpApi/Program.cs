@@ -73,6 +73,18 @@ builder.Services.AddInfraestructure(builder.Configuration);
 
 builder.Services.AddApplication(builder.Configuration);
 
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(
+        builder =>
+        {
+            builder.WithOrigins("http://localhost:3000")
+                                .AllowAnyHeader()
+                                .AllowAnyMethod();
+        });
+});
+
+
 // builder.Services.AddDbContext<ComercioElectronicoDbContext>();
 
 // builder.Services.AddScoped<IUnitOfWork>(provider=>
@@ -103,7 +115,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthentication();
-
+app.UseCors();
 app.UseAuthorization();
 
 app.MapControllers();

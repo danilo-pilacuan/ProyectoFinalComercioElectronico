@@ -1,11 +1,13 @@
 using ComercioElectronico.Application;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Cors;
 
 namespace ComercioElectronico.HttpApi.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[EnableCors]
 [Authorize]
 public class TipoProductoController:ControllerBase
 {
@@ -22,13 +24,13 @@ public class TipoProductoController:ControllerBase
     }
 
     [HttpPost]
-    public async Task<TipoProductoDto> registrar([FromForm] TipoProductoCreateUpdateDto tipoProductoCreateUpdateDto)
+    public async Task<TipoProductoDto> registrar([FromBody] TipoProductoCreateUpdateDto tipoProductoCreateUpdateDto)
     {
         return await tipoProductoAppService.CreateAsync(tipoProductoCreateUpdateDto);
     }
 
     [HttpPut("{tipoProductoId}")]
-    public async Task actualizar(string tipoProductoId, [FromForm] TipoProductoCreateUpdateDto tipoProductoCreateUpdateDto)
+    public async Task actualizar(string tipoProductoId, [FromBody] TipoProductoCreateUpdateDto tipoProductoCreateUpdateDto)
     {
         await tipoProductoAppService.UpdateAsync(tipoProductoId,tipoProductoCreateUpdateDto);
     }

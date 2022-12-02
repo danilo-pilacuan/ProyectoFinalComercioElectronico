@@ -1,11 +1,13 @@
 using ComercioElectronico.Application;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Cors;
 
 namespace ComercioElectronico.HttpApi.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[EnableCors]
 [Authorize]
 public class ListaDeseosController:ControllerBase
 {
@@ -28,13 +30,13 @@ public class ListaDeseosController:ControllerBase
     }
 
     [HttpPost("ListaDeseosItem")]
-    public async Task<ListaDeseosItemDto> registrarListaDeseosItem([FromForm] ListaDeseosItemCreateUpdateDto listaDeseosItemCreateUpdateDto)
+    public async Task<ListaDeseosItemDto> registrarListaDeseosItem([FromBody] ListaDeseosItemCreateUpdateDto listaDeseosItemCreateUpdateDto)
     {
         return await listaDeseosAppService.CreateListaDeseosItemAsync(listaDeseosItemCreateUpdateDto);
     }
 
     [HttpPut("{listaDeseosId}")]
-    public async Task actualizar(Guid listaDeseosId, [FromForm] ListaDeseosCreateUpdateDto listaDeseosCreateUpdateDto)
+    public async Task actualizar(Guid listaDeseosId, [FromBody] ListaDeseosCreateUpdateDto listaDeseosCreateUpdateDto)
     {
         await listaDeseosAppService.UpdateAsync(listaDeseosId,listaDeseosCreateUpdateDto);
     }

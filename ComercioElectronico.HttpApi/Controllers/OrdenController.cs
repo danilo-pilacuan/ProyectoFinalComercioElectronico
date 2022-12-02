@@ -1,11 +1,13 @@
 using ComercioElectronico.Application;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Cors;
 
 namespace ComercioElectronico.HttpApi.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[EnableCors]
 [Authorize]
 public class OrdenController:ControllerBase
 {
@@ -28,13 +30,13 @@ public class OrdenController:ControllerBase
     }
     
     [HttpPost("OrdenItem")]
-    public async Task<OrdenItemDto> registrarOrdenItem([FromForm] OrdenItemCreateUpdateDto ordenItemCreateUpdateDto)
+    public async Task<OrdenItemDto> registrarOrdenItem([FromBody] OrdenItemCreateUpdateDto ordenItemCreateUpdateDto)
     {
         return await ordenAppService.CreateOrdenItemAsync(ordenItemCreateUpdateDto);
     }
 
     [HttpPut("{ordenId}")]
-    public async Task actualizar(Guid ordenId, [FromForm] OrdenCreateUpdateDto ordenCreateUpdateDto)
+    public async Task actualizar(Guid ordenId, [FromBody] OrdenCreateUpdateDto ordenCreateUpdateDto)
     {
         await ordenAppService.UpdateAsync(ordenId,ordenCreateUpdateDto);
     }

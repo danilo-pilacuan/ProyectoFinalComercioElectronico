@@ -7,10 +7,12 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Authentication;
 using System.Security.Claims;
 using System.Text;
+using Microsoft.AspNetCore.Cors;
 
 namespace ComercioElectronico.HttpApi.Controllers
 {
     [Route("api/[controller]")]
+    [EnableCors]
     [ApiController]
     public class AuthController : ControllerBase {
 
@@ -26,14 +28,14 @@ namespace ComercioElectronico.HttpApi.Controllers
         [HttpPost("/api/resgistrarUser")]
         [AllowAnonymous]
         
-        public async Task<UserDto> registrar([FromForm] UserCreateUpdateDto userCreateUpdateDto)
+        public async Task<UserDto> registrar([FromBody] UserCreateUpdateDto userCreateUpdateDto)
         {
             return await userAppService.CreateAsync(userCreateUpdateDto);
         }
 
         [HttpPost("/api/login")]
         [AllowAnonymous]
-        public async Task<string> TokenAsync([FromForm] UserCreateUpdateDto userCreateUpdateDto)
+        public async Task<string> TokenAsync([FromBody] UserCreateUpdateDto userCreateUpdateDto)
         {
 
             UserDto userDto = await userAppService.GetByUserNameAsync(userCreateUpdateDto.UserName);

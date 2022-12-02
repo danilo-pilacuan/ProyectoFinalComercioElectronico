@@ -1,11 +1,13 @@
 using ComercioElectronico.Application;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Cors;
 
 namespace ComercioElectronico.HttpApi.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[EnableCors]
 [Authorize]
 public class ProductoController:ControllerBase
 {
@@ -16,12 +18,14 @@ public class ProductoController:ControllerBase
     }
 
     [HttpGet]
+    [AllowAnonymous]
     public ICollection<ProductoDto> obtenerProductos()
     {
         return productoAppService.GetAll();
     }
 
     [HttpGet("{campo}/{parametro}")]
+    [AllowAnonymous]
     public ICollection<ProductoDto> obtenerProductosPaginado([FromQuery] int limit=10,[FromQuery] int offset=0,[FromRoute] string campo="",[FromRoute] string parametro="")
     {
         return productoAppService.GetAll();
@@ -34,7 +38,7 @@ public class ProductoController:ControllerBase
     }
 
     [HttpPut("{productoId}")]
-    public async Task actualizar(Guid productoId, [FromForm] ProductoCreateUpdateDto productoCreateUpdateDto)
+    public async Task actualizar(Guid productoId, [FromBody] ProductoCreateUpdateDto productoCreateUpdateDto)
     {
         await productoAppService.UpdateAsync(productoId,productoCreateUpdateDto);
     }

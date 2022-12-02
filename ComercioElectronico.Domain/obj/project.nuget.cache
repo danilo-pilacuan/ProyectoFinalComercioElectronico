@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AbQABq9p/GOE59soUmyVrr5FumzCqHOi6i/CmHwjTVl60/FkZH8nRABKvoNgNw5rwl9RY5i4KJSqrqW/dcciwA==",
+  "dgSpecHash": "noDj8k0Cdu2D0a3RM3eus97kVGbCTvFFMGIfS1l9M8wZ9oN6WlrFQZFNMtA8ygywMac3UWwcmaF2ZV3Qb/HfuQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Domain\\ComercioElectronico.Domain.csproj",
+  "projectFilePath": "C:\\Users\\danil\\Desktop\\ProyectoFinalComercioElectronico\\ComercioElectronico.Domain\\ComercioElectronico.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

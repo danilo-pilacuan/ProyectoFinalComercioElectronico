@@ -1,36 +1,38 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.HttpApi\\ComercioElectronico.HttpApi.csproj": {}
+    "c:\\Users\\danil\\Desktop\\ProyectoFinalComercioElectronico\\ComercioElectronico.HttpApi\\ComercioElectronico.HttpApi.csproj": {}
   },
   "projects": {
-    "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Application\\ComercioElectronico.Application.csproj": {
+    "C:\\Users\\danil\\Desktop\\ProyectoFinalComercioElectronico\\ComercioElectronico.Application\\ComercioElectronico.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Application\\ComercioElectronico.Application.csproj",
+        "projectUniqueName": "C:\\Users\\danil\\Desktop\\ProyectoFinalComercioElectronico\\ComercioElectronico.Application\\ComercioElectronico.Application.csproj",
         "projectName": "ComercioElectronico.Application",
-        "projectPath": "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Application\\ComercioElectronico.Application.csproj",
-        "packagesPath": "C:\\Users\\dpilacua\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Application\\obj\\",
+        "projectPath": "C:\\Users\\danil\\Desktop\\ProyectoFinalComercioElectronico\\ComercioElectronico.Application\\ComercioElectronico.Application.csproj",
+        "packagesPath": "C:\\Users\\danil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\danil\\Desktop\\ProyectoFinalComercioElectronico\\ComercioElectronico.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dpilacua\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\danil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Domain\\ComercioElectronico.Domain.csproj": {
-                "projectPath": "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Domain\\ComercioElectronico.Domain.csproj"
+              "C:\\Users\\danil\\Desktop\\ProyectoFinalComercioElectronico\\ComercioElectronico.Domain\\ComercioElectronico.Domain.csproj": {
+                "projectPath": "C:\\Users\\danil\\Desktop\\ProyectoFinalComercioElectronico\\ComercioElectronico.Domain\\ComercioElectronico.Domain.csproj"
               },
-              "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Infraestructure\\ComercioElectronico.Infraestructure.csproj": {
-                "projectPath": "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Infraestructure\\ComercioElectronico.Infraestructure.csproj"
+              "C:\\Users\\danil\\Desktop\\ProyectoFinalComercioElectronico\\ComercioElectronico.Infraestructure\\ComercioElectronico.Infraestructure.csproj": {
+                "projectPath": "C:\\Users\\danil\\Desktop\\ProyectoFinalComercioElectronico\\ComercioElectronico.Infraestructure\\ComercioElectronico.Infraestructure.csproj"
               }
             }
           }
@@ -68,7 +70,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -77,26 +80,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Domain\\ComercioElectronico.Domain.csproj": {
+    "C:\\Users\\danil\\Desktop\\ProyectoFinalComercioElectronico\\ComercioElectronico.Domain\\ComercioElectronico.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Domain\\ComercioElectronico.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\danil\\Desktop\\ProyectoFinalComercioElectronico\\ComercioElectronico.Domain\\ComercioElectronico.Domain.csproj",
         "projectName": "ComercioElectronico.Domain",
-        "projectPath": "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Domain\\ComercioElectronico.Domain.csproj",
-        "packagesPath": "C:\\Users\\dpilacua\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Domain\\obj\\",
+        "projectPath": "C:\\Users\\danil\\Desktop\\ProyectoFinalComercioElectronico\\ComercioElectronico.Domain\\ComercioElectronico.Domain.csproj",
+        "packagesPath": "C:\\Users\\danil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\danil\\Desktop\\ProyectoFinalComercioElectronico\\ComercioElectronico.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dpilacua\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\danil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -120,7 +125,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -129,40 +135,42 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.HttpApi\\ComercioElectronico.HttpApi.csproj": {
+    "c:\\Users\\danil\\Desktop\\ProyectoFinalComercioElectronico\\ComercioElectronico.HttpApi\\ComercioElectronico.HttpApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.HttpApi\\ComercioElectronico.HttpApi.csproj",
+        "projectUniqueName": "c:\\Users\\danil\\Desktop\\ProyectoFinalComercioElectronico\\ComercioElectronico.HttpApi\\ComercioElectronico.HttpApi.csproj",
         "projectName": "ComercioElectronico.HttpApi",
-        "projectPath": "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.HttpApi\\ComercioElectronico.HttpApi.csproj",
-        "packagesPath": "C:\\Users\\dpilacua\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.HttpApi\\obj\\",
+        "projectPath": "c:\\Users\\danil\\Desktop\\ProyectoFinalComercioElectronico\\ComercioElectronico.HttpApi\\ComercioElectronico.HttpApi.csproj",
+        "packagesPath": "C:\\Users\\danil\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\danil\\Desktop\\ProyectoFinalComercioElectronico\\ComercioElectronico.HttpApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dpilacua\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\danil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Application\\ComercioElectronico.Application.csproj": {
-                "projectPath": "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Application\\ComercioElectronico.Application.csproj"
+              "C:\\Users\\danil\\Desktop\\ProyectoFinalComercioElectronico\\ComercioElectronico.Application\\ComercioElectronico.Application.csproj": {
+                "projectPath": "C:\\Users\\danil\\Desktop\\ProyectoFinalComercioElectronico\\ComercioElectronico.Application\\ComercioElectronico.Application.csproj"
               },
-              "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Domain\\ComercioElectronico.Domain.csproj": {
-                "projectPath": "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Domain\\ComercioElectronico.Domain.csproj"
+              "C:\\Users\\danil\\Desktop\\ProyectoFinalComercioElectronico\\ComercioElectronico.Domain\\ComercioElectronico.Domain.csproj": {
+                "projectPath": "C:\\Users\\danil\\Desktop\\ProyectoFinalComercioElectronico\\ComercioElectronico.Domain\\ComercioElectronico.Domain.csproj"
               },
-              "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Infraestructure\\ComercioElectronico.Infraestructure.csproj": {
-                "projectPath": "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Infraestructure\\ComercioElectronico.Infraestructure.csproj"
+              "C:\\Users\\danil\\Desktop\\ProyectoFinalComercioElectronico\\ComercioElectronico.Infraestructure\\ComercioElectronico.Infraestructure.csproj": {
+                "projectPath": "C:\\Users\\danil\\Desktop\\ProyectoFinalComercioElectronico\\ComercioElectronico.Infraestructure\\ComercioElectronico.Infraestructure.csproj"
               }
             }
           }
@@ -181,6 +189,10 @@
               "target": "Package",
               "version": "[6.0.10, )"
             },
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
@@ -196,7 +208,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -208,34 +221,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Infraestructure\\ComercioElectronico.Infraestructure.csproj": {
+    "C:\\Users\\danil\\Desktop\\ProyectoFinalComercioElectronico\\ComercioElectronico.Infraestructure\\ComercioElectronico.Infraestructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Infraestructure\\ComercioElectronico.Infraestructure.csproj",
+        "projectUniqueName": "C:\\Users\\danil\\Desktop\\ProyectoFinalComercioElectronico\\ComercioElectronico.Infraestructure\\ComercioElectronico.Infraestructure.csproj",
         "projectName": "ComercioElectronico.Infraestructure",
-        "projectPath": "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Infraestructure\\ComercioElectronico.Infraestructure.csproj",
-        "packagesPath": "C:\\Users\\dpilacua\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Infraestructure\\obj\\",
+        "projectPath": "C:\\Users\\danil\\Desktop\\ProyectoFinalComercioElectronico\\ComercioElectronico.Infraestructure\\ComercioElectronico.Infraestructure.csproj",
+        "packagesPath": "C:\\Users\\danil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\danil\\Desktop\\ProyectoFinalComercioElectronico\\ComercioElectronico.Infraestructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dpilacua\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\danil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Domain\\ComercioElectronico.Domain.csproj": {
-                "projectPath": "c:\\Users\\dpilacua\\Desktop\\ComercioElectronico\\ComercioElectronico.Domain\\ComercioElectronico.Domain.csproj"
+              "C:\\Users\\danil\\Desktop\\ProyectoFinalComercioElectronico\\ComercioElectronico.Domain\\ComercioElectronico.Domain.csproj": {
+                "projectPath": "C:\\Users\\danil\\Desktop\\ProyectoFinalComercioElectronico\\ComercioElectronico.Domain\\ComercioElectronico.Domain.csproj"
               }
             }
           }
@@ -265,7 +280,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -274,7 +290,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

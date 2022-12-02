@@ -1,11 +1,13 @@
 using ComercioElectronico.Application;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Cors;
 
 namespace ComercioElectronico.HttpApi.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[EnableCors]
 [Authorize]
 public class ClienteController:ControllerBase
 {
@@ -22,13 +24,13 @@ public class ClienteController:ControllerBase
     }
 
     [HttpPost]
-    public async Task<ClienteDto> registrar([FromForm] ClienteCreateUpdateDto clienteCreateUpdateDto)
+    public async Task<ClienteDto> registrar([FromBody] ClienteCreateUpdateDto clienteCreateUpdateDto)
     {
         return await clienteAppService.CreateAsync(clienteCreateUpdateDto);
     }
 
     [HttpPut("{clienteId}")]
-    public async Task actualizar(Guid clienteId, [FromForm] ClienteCreateUpdateDto clienteCreateUpdateDto)
+    public async Task actualizar(Guid clienteId, [FromBody] ClienteCreateUpdateDto clienteCreateUpdateDto)
     {
         await clienteAppService.UpdateAsync(clienteId,clienteCreateUpdateDto);
     }
